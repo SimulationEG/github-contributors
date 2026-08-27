@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 40px;
+}
+
+.profile-card {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.username {
+    color: #666;
+}
+
+.links {
+    margin: 20px 0;
+}
+
+.links a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+}
