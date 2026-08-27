@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+.container {
+    width: min(900px, 90%);
+    margin: 50px auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+
+.tag {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+}
+
+.buttons {
+    margin-top: 25px;
+}
+
+.buttons a,
+.project-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 8px;
+    background: #1f2937;
+    color: white;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: #e5e7eb;
+}
+
+.greeting-card {
+    text-align: center;
+}
+
+button {
+    border: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #1f2937;
+    color: white;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #6b7280;
+}
