@@ -1,0 +1,113 @@
+/* Base Styles & Dark Theme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #0b1120;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+}
+
+/* Back Link */
+.back-link {
+    display: inline-block;
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Header Profile Card */
+.profile-card {
+    background-color: #131c31;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 32px;
+    margin-bottom: 32px;
+}
+
+.profile-card h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.github-handle {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+}
+
+.github-handle a {
+    color: #6366f1;
+    text-decoration: none;
+}
+
+.github-handle a:hover {
+    text-decoration: underline;
+}
+
+/* Track Badge */
+.track-badge {
+    display: inline-block;
+    background-color: #0284c7;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 28px;
+}
+
+.section h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.section p {
+    color: #cbd5e1;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Links List */
+.links-list {
+    list-style: none;
+}
+
+.links-list li {
+    margin-bottom: 8px;
+}
+
+.links-list a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.links-list a:hover {
+    text-decoration: underline;
+}
