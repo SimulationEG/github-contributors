@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohamed Ahmed Mohamed Morsi - .NET Back-End Engineer Developer Profile" />
+  <meta name="theme-color" content="#090d16" />
+  <title>Mohamed Morsi | .NET Back-End Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-right" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-code">&lt;</span>morsy777<span class="brand-code"> /&gt;</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#track" class="nav-link">Learning Track</a>
+        <a href="#project" class="nav-link">Project</a>
+        <a href="#connect" class="nav-link">Connect</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" id="navToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1: Hero -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="greeting-badge">
+            <span class="wave">Hi, I'm Mohamed 👋</span>
+          </div>
+          <h1 class="hero-title">
+            Mohamed Ahmed<br />
+            <span class="gradient-text">Mohamed Morsi</span>
+          </h1>
+          <div class="track-pill">
+            <span class="pill-dot"></span>
+            .NET Back-End Engineering
+          </div>
+          <p class="hero-description">
+            Building my skills in backend development, APIs, databases, and modern .NET technologies.
+          </p>
+          <div class="hero-actions">
+            <a href="https://github.com/morsy777" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/eng-mohamed-morsi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="code-title">DeveloperProfile.cs</span>
+            </div>
+            <div class="code-body">
+              <pre><code><span class="kwd">namespace</span> <span class="typ">DeveloperProfile</span>;
+
+<span class="kwd">public class</span> <span class="typ">Engineer</span>
+{
+    <span class="kwd">public string</span> Name =&gt; <span class="str">"Mohamed Morsi"</span>;
+    <span class="kwd">public string</span> Track =&gt; <span class="str">".NET Back-End"</span>;
+    <span class="kwd">public string[]</span> Skills =&gt; [<span class="str">"C#"</span>, <span class="str">"ASP.NET"</span>, <span class="str">"SQL"</span>];
+    
+    <span class="kwd">public void</span> <span class="met">BuildFuture</span>()
+    {
+        Console.WriteLine(<span class="str">"Building robust backend APIs..."</span>);
+    }
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Learning Track -->
+    <section id="track" class="section track-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Specialization</span>
+          <h2 class="section-title">Learning Track</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="track-card glow-card">
+          <div class="track-card-header">
+            <div class="track-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 class="track-card-title">.NET Back-End Engineering</h3>
+              <p class="track-card-subtitle">Server-Side Development & Architecture</p>
+            </div>
+          </div>
+
+          <p class="track-card-text">
+            Mastering backend architecture, OOP, database design, REST APIs, and microservices ecosystem using the modern .NET ecosystem.
+          </p>
+
+          <div class="tech-tags-container">
+            <h4 class="tags-heading">Technologies & Tools</h4>
+            <div class="tags-grid">
+              <span class="tech-tag">
+                <span class="tag-icon">C#</span>
+                C#
+              </span>
+              <span class="tech-tag">
+                <span class="tag-icon">.NET</span>
+                .NET
+              </span>
+              <span class="tech-tag">
+                <span class="tag-icon">⚡</span>
+                ASP.NET Core
+              </span>
+              <span class="tech-tag">
+                <span class="tag-icon">🛢️</span>
+                SQL Server
+              </span>
+              <span class="tech-tag">
+                <span class="tag-icon">🔄</span>
+                Entity Framework Core
+              </span>
+              <span class="tech-tag">
+                <span class="tag-icon">📦</span>
+                Git &amp; GitHub
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Project -->
+    <section id="project" class="section project-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Portfolio Highlight</span>
+          <h2 class="section-title">Project</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="project-grid">
+          <div class="project-card glow-card">
+            <div class="project-header">
+              <div class="project-folder-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <div class="project-external">
+                <a href="https://github.com/morsy777/calculator" target="_blank" rel="noopener noreferrer" aria-label="Calculator Repository Link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Calculator</h3>
+
+            <p class="project-description">
+              A simple calculator project built as part of my development journey.
+            </p>
+
+            <div class="project-tags">
+              <span class="p-tag">C#</span>
+              <span class="p-tag">.NET</span>
+              <span class="p-tag">Logic</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/morsy777/calculator" target="_blank" rel="noopener noreferrer" class="btn btn-project">
+                View Repository &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Connect -->
+    <section id="connect" class="section connect-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Connect</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="connect-grid">
+          <!-- GitHub Card -->
+          <a href="https://github.com/morsy777" target="_blank" rel="noopener noreferrer" class="connect-card glow-card">
+            <div class="connect-icon-wrapper github">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </div>
+            <div class="connect-info">
+              <h3>GitHub</h3>
+              <p class="connect-handle">@morsy777</p>
+              <p class="connect-desc">Check out my code repositories and development activity.</p>
+              <span class="connect-link-text">Visit Profile &rarr;</span>
+            </div>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/in/eng-mohamed-morsi/" target="_blank" rel="noopener noreferrer" class="connect-card glow-card">
+            <div class="connect-icon-wrapper linkedin">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <div class="connect-info">
+              <h3>LinkedIn</h3>
+              <p class="connect-handle">eng-mohamed-morsi</p>
+              <p class="connect-desc">Connect with me professionally and view my background.</p>
+              <span class="connect-link-text">Connect &rarr;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Section 5: Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="copyright">&copy; 2026 Mohamed Ahmed Mohamed Morsi</p>
+      <p class="footer-tagline">Built with precision for .NET Back-End Engineering</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
