@@ -1,0 +1,102 @@
+:root {
+    --primary-color: #512bd4; /* لون بيعبر عن بيئة .NET */
+    --bg-color: #f8f9fa;
+    --text-color: #333;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    color: var(--primary-color);
+}
+
+.track-badge {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.username span {
+    font-weight: bold;
+    color: #555;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--primary-color);
+    transition: opacity 0.3s;
+    font-size: 0.9em;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.github-btn {
+    background-color: #24292e;
+}
+
+.linkedin-btn {
+    background-color: #0077b5;
+}
