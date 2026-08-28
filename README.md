@@ -62,5 +62,6 @@ Full rules: **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 |--------|------|
 | `students/sample-student/` | First sample card |
 | `students/john-doe/` | Second sample card |
+| abdelkarim Mohamed | [@your-username](https://github.com/abdelkarimMohamed) | [Website](students/abdelkarimMohamed/index.html) |
 
 Replace the Calculator URLs in samples with real assignment repos when you add your own card.
