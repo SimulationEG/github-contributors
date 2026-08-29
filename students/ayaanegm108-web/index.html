@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aya Negm — Developer Profile</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <main class="wrap">
+
+    <a class="back-link" href="../../index.html">← Back to contributors</a>
+
+    <header class="topbar">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="path">~/profiles/aya-negm</span>
+      <span class="status">200 OK</span>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">// developer profile</p>
+      <h1 class="name">Aya Negm</h1>
+      <p class="track"><span class="prompt">$</span> track: <span class="highlight">Backend .NET</span> @ Simulation Academy <span class="sep">&amp;</span> <span class="highlight">Data Analysis</span> @ DEPI</p>
+
+      <p class="bio-line">
+        <span id="bioLine1"></span><span class="cursor cursor-1" aria-hidden="true">▌</span>
+      </p>
+      <p class="bio-line">
+        <span id="bioLine2"></span><span class="cursor cursor-2" aria-hidden="true">▌</span>
+      </p>
+    </section>
+
+    <section class="record">
+      <div class="record-header">
+        <h2>Profile Record</h2>
+        <div class="toggle" role="group" aria-label="View mode">
+          <button type="button" class="toggle-btn active" data-view="card">Card view</button>
+          <button type="button" class="toggle-btn" data-view="json">JSON view</button>
+        </div>
+      </div>
+
+      <!-- CARD VIEW -->
+      <div class="view view-card active" id="cardView">
+        <ul class="fields">
+          <li>
+            <span class="key">name</span>
+            <span class="value">Aya Negm</span>
+          </li>
+          <li>
+            <span class="key">github</span>
+            <a class="value link" href="https://github.com/ayaanegm108-web" target="_blank" rel="noopener">ayaanegm108-web ↗</a>
+          </li>
+          <li>
+            <span class="key">track</span>
+            <span class="value">Backend .NET (Simulation Academy) &amp; Data Analysis (DEPI)</span>
+          </li>
+          <li>
+            <span class="key">calculator_repo</span>
+            <a class="value link" href="https://github.com/ayaanegm108-web/calculator" target="_blank" rel="noopener">calculator ↗</a>
+          </li>
+          <li>
+            <span class="key">linkedin</span>
+            <a class="value link" href="https://www.linkedin.com/in/aya-negm-2802a5429/" target="_blank" rel="noopener">Aya Negm ↗</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- JSON VIEW -->
+      <div class="view view-json" id="jsonView">
+        <pre><code>{
+  <span class="j-key">"name"</span>: <span class="j-str">"Aya Negm"</span>,
+  <span class="j-key">"github"</span>: <span class="j-str">"ayaanegm108-web"</span>,
+  <span class="j-key">"track"</span>: [
+    { <span class="j-key">"program"</span>: <span class="j-str">"Backend .NET"</span>, <span class="j-key">"at"</span>: <span class="j-str">"Simulation Academy"</span> },
+    { <span class="j-key">"program"</span>: <span class="j-str">"Data Analysis"</span>, <span class="j-key">"at"</span>: <span class="j-str">"DEPI"</span> }
+  ],
+  <span class="j-key">"calculator_repo"</span>: <span class="j-str">"github.com/ayaanegm108-web/calculator"</span>,
+  <span class="j-key">"linkedin"</span>: <span class="j-str">"linkedin.com/in/aya-negm-2802a5429"</span>
+}</code></pre>
+      </div>
+    </section>
+
+    <section class="links">
+      <a class="link-card" href="https://github.com/ayaanegm108-web" target="_blank" rel="noopener">
+        <span class="link-label">GitHub Profile</span>
+        <span class="link-arrow">↗</span>
+      </a>
+      <a class="link-card" href="https://github.com/ayaanegm108-web/calculator" target="_blank" rel="noopener">
+        <span class="link-label">Calculator Repo</span>
+        <span class="link-arrow">↗</span>
+      </a>
+      <a class="link-card" href="https://www.linkedin.com/in/aya-negm-2802a5429/" target="_blank" rel="noopener">
+        <span class="link-label">LinkedIn</span>
+        <span class="link-arrow">↗</span>
+      </a>
+    </section>
+
+    <footer class="foot">
+      <p>Built with HTML, CSS &amp; JS · <span class="highlight">students/ayaanegm108-web</span></p>
+    </footer>
+
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
