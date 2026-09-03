@@ -62,5 +62,6 @@ Full rules: **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 |--------|------|
 | `students/sample-student/` | First sample card |
 | `students/john-doe/` | Second sample card |
+| `students/judge22/` | Backend .NET Developer |
 
 Replace the Calculator URLs in samples with real assignment repos when you add your own card.
