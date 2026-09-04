@@ -62,5 +62,6 @@ Full rules: **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 |--------|------|
 | `students/sample-student/` | First sample card |
 | `students/john-doe/` | Second sample card |
+| `students/Saeid-Elkhouly/` | file:///C:/Users/mosae/OneDrive/Desktop/Simulation/Assignments/Assignment2/github-contributors/students/Saeid-Elkhouly/index.html |
 
 Replace the Calculator URLs in samples with real assignment repos when you add your own card.
