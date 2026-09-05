@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abdulrahman Alseddiq — Backend .NET student at SimulationEG. Developer profile, learning journey, and a mini calculator." />
+  <title>Abdulrahman Alseddiq · SimulationEG</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <a class="back" href="../../index.html">&larr; Back to contributors</a>
+
+    <header class="hero">
+      <div class="avatar" aria-hidden="true">AA</div>
+      <div>
+        <h1>Abdulrahman Alseddiq</h1>
+        <p class="meta">
+          GitHub: <a href="https://github.com/AbdulrahmanAlseddiq">@AbdulrahmanAlseddiq</a>
+          &middot; Full-stack developer (ERP &amp; accounting systems)
+        </p>
+        <span class="track">Backend .NET</span>
+      </div>
+    </header>
+
+    <section aria-labelledby="about">
+      <h2 id="about">About me</h2>
+      <p>
+        Full-stack developer focused on <strong>ERP and accounting systems</strong>. I build
+        backends with C# / .NET and SQL Server, web dashboards with React, and Android apps with
+        Kotlin &amp; Jetpack Compose. I care about Arabic-first (RTL) interfaces and clean,
+        maintainable code.
+      </p>
+      <p>
+        I joined the <strong>SimulationEG .NET Diploma</strong> to sharpen my fundamentals,
+        practice professional Git workflows, and solve problems with C#. This page is my first
+        open-source style contribution: forked, cloned over SSH, built on a feature branch, and
+        submitted through a Pull Request.
+      </p>
+    </section>
+
+    <section aria-labelledby="stack">
+      <h2 id="stack">Tech stack</h2>
+      <ul class="chips" aria-label="Technologies">
+        <li>C#</li>
+        <li>.NET</li>
+        <li>SQL Server</li>
+        <li>React</li>
+        <li>TypeScript</li>
+        <li>Kotlin</li>
+        <li>Jetpack Compose</li>
+        <li>Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="journey">
+      <h2 id="journey">Learning journey</h2>
+      <ol class="timeline">
+        <li>
+          <span class="dot" aria-hidden="true"></span>
+          <div>
+            <strong>Assignment 1 — Git Mastery</strong>
+            <p>Branching, merge vs rebase, squash, cherry-pick, and my first LeetCode solution in C#.</p>
+          </div>
+        </li>
+        <li>
+          <span class="dot" aria-hidden="true"></span>
+          <div>
+            <strong>Assignment 2 — GitHub Presence &amp; First Contribution</strong>
+            <p>
+              Published a <a href="https://github.com/AbdulrahmanAlseddiq/calculator">Calculator</a>
+              project, contributed this page via fork + SSH + PR, and solved Reverse String with two pointers.
+            </p>
+          </div>
+        </li>
+        <li>
+          <span class="dot" aria-hidden="true"></span>
+          <div>
+            <strong>Next — C# Fundamentals &amp; beyond</strong>
+            <p>OOP, collections, LINQ, and building real backend services with ASP.NET Core.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="calc">
+      <h2 id="calc">Mini calculator</h2>
+      <p class="hint">A tiny web version of my C# console calculator. Try dividing by zero.</p>
+      <form id="calc-form" class="calc" autocomplete="off">
+        <label>
+          <span>First number</span>
+          <input id="calc-a" type="text" inputmode="decimal" placeholder="12" required />
+        </label>
+        <label>
+          <span>Operator</span>
+          <select id="calc-op" aria-label="Operator">
+            <option value="+">+</option>
+            <option value="-">&minus;</option>
+            <option value="*">&times;</option>
+            <option value="/">&divide;</option>
+          </select>
+        </label>
+        <label>
+          <span>Second number</span>
+          <input id="calc-b" type="text" inputmode="decimal" placeholder="7.5" required />
+        </label>
+        <button type="submit">Calculate</button>
+      </form>
+      <p id="calc-result" class="result" role="status" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="links">
+      <h2 id="links">Links</h2>
+      <nav class="links" aria-label="Abdulrahman Alseddiq links">
+        <a href="https://github.com/AbdulrahmanAlseddiq">GitHub profile</a>
+        <a href="https://github.com/AbdulrahmanAlseddiq/calculator">Calculator repository</a>
+        <a href="https://www.linkedin.com/in/aboudalseddiq/">LinkedIn</a>
+        <a href="https://leetcode.com/u/aboudalseddiq/">LeetCode</a>
+      </nav>
+    </section>
+
+    <footer class="foot">
+      <p>Built with plain HTML, CSS, and JavaScript for the SimulationEG contributors gallery.</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
