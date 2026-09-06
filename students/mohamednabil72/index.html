@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Nabil | Frontend Developer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <canvas id="particles"></canvas>
+
+    <!-- ══ NAVBAR ══════════════════════════════════════════ -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">MN.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto gap-1">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary-custom btn-sm ms-3"
+            >Hire Me ✦</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- ══ HERO ═══════════════════════════════════════════ -->
+    <section id="hero">
+      <div class="hero-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7">
+            <div class="hero-badge">✦ Welcome to Mohamed Nabil's Portfolio</div>
+            <h1 class="hero-name">
+              Hi, I'm <span>Mohamed Nabil</span><br />
+              <span class="typed-wrap" id="typed"></span
+              ><span class="typed-cursor">|</span>
+            </h1>
+            <p class="hero-title">
+              I craft modern, scalable web apps with
+              <span class="angular-tag">Angular</span> — turning ideas into
+              clean, fast & beautiful digital experiences.
+            </p>
+            <div class="hero-btns d-flex flex-wrap gap-3">
+              <a href="#projects" class="btn btn-primary-custom"
+                >View My Work <i class="fas fa-arrow-right ms-1"></i
+              ></a>
+              <a href="#contact" class="btn btn-outline-custom">Let's Talk</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <div class="stat-num" id="cnt1">0</div>
+                <div class="stat-label">Projects Done</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num" id="cnt2">0</div>
+                <div class="stat-label">Happy Clients</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num" id="cnt3">0</div>
+                <div class="stat-label">Years Exp.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center">
+            <div class="photo-wrap">
+              <div class="photo-ring">
+                <div class="photo-inner">
+                  <div
+                    class="photo-placeholder"
+                    id="photoPlaceholder"
+                   
+                  >
+                    <img src="imgs/81f52d4e-e9a5-48a8-8b51-73dbcb1eaacd.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <input
+                type="file"
+                id="photoInput"
+                accept="image/*"
+                style="display: none"
+              />
+              <div
+                style="
+                  margin-top: 1.1rem;
+                  color: rgba(240, 244, 255, 0.45);
+                  font-size: 0.8rem;
+                "
+              >
+                <i
+                  class="fas fa-circle me-1"
+                  style="color: #22c55e; font-size: 0.5rem"
+                ></i>
+                Available for Freelance
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ ABOUT ═══════════════════════════════════════════ -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title reveal">About <span>Me</span></h2>
+        <div class="section-line reveal"></div>
+        <div class="row g-4">
+          <div class="col-lg-6 reveal-left">
+            <div class="about-card h-100">
+              <h5
+                style="
+                  color: var(--cyan);
+                  margin-bottom: 1rem;
+                  font-family: &quot;Syne&quot;, sans-serif;
+                  font-weight: 700;
+                "
+              >
+                <i class="fas fa-user me-2"></i>Who Am I?
+              </h5>
+              <p class="about-text">
+                I'm <strong>Mohamed Nabil</strong>, a passionate
+                <strong class="angular-tag">Angular Frontend Developer</strong>
+                with a strong eye for detail and a love for building seamless
+                user experiences. <br /><br />
+                I specialize in building complex, scalable SPAs with Angular,
+                crafting responsive pixel-perfect UIs, and integrating clean
+                REST APIs. I believe great frontend work is where logic meets
+                art.
+              </p>
+              <div class="mt-3">
+                <span class="skill-badge">Angular</span>
+                <span class="skill-badge">TypeScript</span>
+                <span class="skill-badge">RxJS</span>
+                <span class="skill-badge">NgRx</span>
+                <span class="skill-badge">Angular Material</span>
+                <span class="skill-badge">Bootstrap</span>
+                <span class="skill-badge">HTML5</span>
+                <span class="skill-badge">CSS3 / SCSS</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">REST APIs</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">Figma</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 reveal-right">
+            <div class="about-card h-100">
+              <h5
+                style="
+                  color: var(--gold);
+                  margin-bottom: 1.2rem;
+                  font-family: &quot;Syne&quot;, sans-serif;
+                  font-weight: 700;
+                "
+              >
+                <i class="fas fa-chart-bar me-2"></i>Skill Levels
+              </h5>
+              <div class="skill-bar">
+                <div class="skill-bar-label">
+                  <span>Angular & TypeScript</span><span>95%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="95"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-label">
+                  <span>HTML5 / CSS3 / SCSS</span><span>92%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="92"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-label">
+                  <span>RxJS & State Management</span><span>85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-label">
+                  <span>REST API Integration</span><span>88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="88"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-label">
+                  <span>UI/UX & Figma</span><span>75%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="75"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SERVICES ════════════════════════════════════════ -->
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title reveal">What I <span>Offer</span></h2>
+        <div class="section-line reveal"></div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fab fa-angular" style="color: #dd0031"></i>
+              </div>
+              <h5>Angular Development</h5>
+              <p>
+                Building robust, scalable SPAs with Angular — clean
+                architecture, lazy loading, and top-notch performance.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.1s">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-mobile-alt" style="color: var(--cyan)"></i>
+              </div>
+              <h5>Responsive UI Design</h5>
+              <p>
+                Pixel-perfect, fully responsive interfaces that look stunning on
+                every screen size and device.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.2s">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-plug" style="color: var(--gold)"></i>
+              </div>
+              <h5>API Integration</h5>
+              <p>
+                Seamless integration of REST APIs using Angular HttpClient,
+                interceptors, and RxJS operators.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.3s">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-layer-group" style="color: var(--purple)"></i>
+              </div>
+              <h5>State Management</h5>
+              <p>
+                Managing complex application state with NgRx / Signals /
+                Services for predictable data flow.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.4s">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-paint-brush" style="color: var(--cyan)"></i>
+              </div>
+              <h5>UI Component Libraries</h5>
+              <p>
+                Expertise in Angular Material, PrimeNG, and Bootstrap to deliver
+                polished, accessible UIs fast.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.5s">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-tachometer-alt" style="color: var(--gold)"></i>
+              </div>
+              <h5>Performance Optimization</h5>
+              <p>
+                Optimizing Angular apps with OnPush strategy, lazy loading,
+                bundle analysis and Core Web Vitals tuning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ PROJECTS ════════════════════════════════════════ -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">My <span>Projects</span></h2>
+        <div class="section-line reveal"></div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="project-card">
+              <div class="project-img">🛒</div>
+              <div class="project-body">
+                <div>
+                  <span class="project-tag">Angular</span
+                  ><span class="project-tag">NgRx</span
+                  ><span class="project-tag">Node.js</span>
+                </div>
+                <h5 class="mt-2">E-Commerce Platform</h5>
+                <p>
+                  Full-featured Angular SPA with product catalog, cart, auth,
+                  and admin dashboard integrated with REST API.
+                </p>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt me-1"></i>Live Demo</a
+                  >
+                  <a href="#"><i class="fab fa-github me-1"></i>Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.1s">
+            <div class="project-card">
+              <div class="project-img">📊</div>
+              <div class="project-body">
+                <div>
+                  <span class="project-tag">Angular</span
+                  ><span class="project-tag">Chart.js</span
+                  ><span class="project-tag">Material</span>
+                </div>
+                <h5 class="mt-2">Analytics Dashboard</h5>
+                <p>
+                  Interactive admin dashboard with real-time charts, data
+                  tables, role-based access and dark/light theme.
+                </p>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt me-1"></i>Live Demo</a
+                  >
+                  <a href="#"><i class="fab fa-github me-1"></i>Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.2s">
+            <div class="project-card">
+              <div class="project-img">🏥</div>
+              <div class="project-body">
+                <div>
+                  <span class="project-tag">Angular</span
+                  ><span class="project-tag">PrimeNG</span
+                  ><span class="project-tag">RxJS</span>
+                </div>
+                <h5 class="mt-2">Clinic Management System</h5>
+                <p>
+                  Appointments, patient records and doctor scheduling — all in a
+                  clean Angular SPA with reactive forms.
+                </p>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt me-1"></i>Live Demo</a
+                  >
+                  <a href="#"><i class="fab fa-github me-1"></i>Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.3s">
+            <div class="project-card">
+              <div class="project-img">💬</div>
+              <div class="project-body">
+                <div>
+                  <span class="project-tag">Angular</span
+                  ><span class="project-tag">Firebase</span
+                  ><span class="project-tag">WebSocket</span>
+                </div>
+                <h5 class="mt-2">Real-Time Chat App</h5>
+                <p>
+                  Live messaging app with rooms, notifications and
+                  authentication — built with Angular + Firebase.
+                </p>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt me-1"></i>Live Demo</a
+                  >
+                  <a href="#"><i class="fab fa-github me-1"></i>Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.4s">
+            <div class="project-card">
+              <div class="project-img">🎓</div>
+              <div class="project-body">
+                <div>
+                  <span class="project-tag">Angular</span
+                  ><span class="project-tag">NgRx</span
+                  ><span class="project-tag">Stripe</span>
+                </div>
+                <h5 class="mt-2">E-Learning Platform</h5>
+                <p>
+                  Course marketplace with video player, progress tracking,
+                  quizzes and Stripe payment integration.
+                </p>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt me-1"></i>Live Demo</a
+                  >
+                  <a href="#"><i class="fab fa-github me-1"></i>Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.5s">
+            <div class="project-card">
+              <div class="project-img">🍕</div>
+              <div class="project-body">
+                <div>
+                  <span class="project-tag">Angular</span
+                  ><span class="project-tag">Google Maps</span
+                  ><span class="project-tag">Bootstrap</span>
+                </div>
+                <h5 class="mt-2">Food Delivery App</h5>
+                <p>
+                  Restaurant ordering app with live order tracking, Google Maps
+                  integration and mobile-first responsive UI.
+                </p>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt me-1"></i>Live Demo</a
+                  >
+                  <a href="#"><i class="fab fa-github me-1"></i>Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CONTACT ════════════════════════════════════════ -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">Get In <span>Touch</span></h2>
+        <div class="section-line reveal"></div>
+        <div class="row g-4">
+          <div class="col-lg-5 reveal-left">
+            <div class="contact-card h-100">
+              <h5
+                style="
+                  color: var(--cyan);
+                  margin-bottom: 1.5rem;
+                  font-family: &quot;Syne&quot;, sans-serif;
+                  font-weight: 700;
+                "
+              >
+                Contact Info
+              </h5>
+              <div class="contact-info-item">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <div
+                    style="font-size: 0.78rem; color: rgba(255, 255, 255, 0.45)"
+                  >
+                    Email
+                  </div>
+                  <div style="font-size: 0.93rem">mohamed.nabil2592005@email.com</div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                <div>
+                  <div
+                    style="font-size: 0.78rem; color: rgba(255, 255, 255, 0.45)"
+                  >
+                    Phone / WhatsApp
+                  </div>
+                  <div style="font-size: 0.93rem">+20 011 21 936 946</div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <div
+                    style="font-size: 0.78rem; color: rgba(255, 255, 255, 0.45)"
+                  >
+                    Location
+                  </div>
+                  <div style="font-size: 0.93rem">Egypt</div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                <div>
+                  <div
+                    style="font-size: 0.78rem; color: rgba(255, 255, 255, 0.45)"
+                  >
+                    Response Time
+                  </div>
+                  <div style="font-size: 0.93rem">Within 24 hours</div>
+                </div>
+              </div>
+              <div class="social-links mt-3">
+                <a href="www.linkedin.com/in/mohamed-nabil-4ab08b29a"><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal-right">
+            <div class="contact-card">
+              <h5
+                style="
+                  color: var(--gold);
+                  margin-bottom: 1.5rem;
+                  font-family: &quot;Syne&quot;, sans-serif;
+                  font-weight: 700;
+                "
+              >
+                Send a Message
+              </h5>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Your message..."
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <button
+                    class="btn btn-primary-custom w-100"
+                    onclick="sendMsg(this)"
+                  >
+                    Send Message <i class="fas fa-paper-plane ms-1"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ═════════════════════════════════════════ -->
+    <footer>
+      <div class="container">
+        <div class="social-links mb-3">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          
+        </div>
+        <p style="color: rgba(240, 244, 255, 0.38); font-size: 0.83rem">
+          Built with <span style="color: #e74c3c">♥</span> by
+          <span
+            style="
+              color: var(--cyan);
+              font-family: &quot;Syne&quot;, sans-serif;
+              font-weight: 700;
+            "
+            >Mohamed Nabil</span
+          >
+          — All Rights Reserved © 2026
+        </p>
+      </div>
+    </footer>
+
+    <button
+      id="scrollTop"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js">
+     
+    </script>
+  </body>
+</html>
