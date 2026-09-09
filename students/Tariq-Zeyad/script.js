@@ -1,0 +1,1 @@
+console.log("Tariq Zeyad portfolio website loaded successfully");
