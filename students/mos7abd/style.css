@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #0b1120;
+    --surface: #111827;
+    --surface-light: #1f2937;
+    --primary: #38bdf8;
+    --primary-dark: #0284c7;
+    --text: #f8fafc;
+    --text-muted: #94a3b8;
+    --border: rgba(148, 163, 184, 0.15);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* =========================
+   Header / Hero
+   ========================= */
+
+header {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background:
+        radial-gradient(circle at top, rgba(56, 189, 248, 0.15), transparent 40%),
+        var(--background);
+    border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+    font-size: clamp(42px, 8vw, 72px);
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 20px;
+    color: var(--text-muted);
+}
+
+/* =========================
+   Main
+   ========================= */
+
+main {
+    width: min(1000px, 90%);
+    margin: 60px auto;
+}
+
+/* =========================
+   Sections
+   ========================= */
+
+section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 35px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    border-color: rgba(56, 189, 248, 0.35);
+}
+
+section h2 {
+    font-size: 25px;
+    margin-bottom: 18px;
+    color: var(--primary);
+}
+
+section p {
+    color: var(--text-muted);
+    font-size: 16px;
+}
+
+/* =========================
+   Links
+   ========================= */
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+li {
+    margin: 0;
+}
+
+a {
+    display: block;
+    padding: 15px 18px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text);
+    background: var(--surface-light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: white;
+    background: var(--primary-dark);
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 600px) {
+    header {
+        min-height: 60vh;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+}
