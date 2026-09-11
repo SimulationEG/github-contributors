@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f7fa;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #1f2937;
+    color: white;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.project {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.project a {
+    text-decoration: none;
+}
