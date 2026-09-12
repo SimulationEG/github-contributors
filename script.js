@@ -1,29 +1,15 @@
-(function () {
-  var search = document.getElementById("contributor-search");
-  var cards = Array.prototype.slice.call(document.querySelectorAll(".card"));
-  var empty = document.getElementById("no-results");
+document.getElementById('year').textContent = new Date().getFullYear();
 
-  if (!search) {
-    return;
-  }
+const greetBtn = document.getElementById('greet-btn');
+const greetOutput = document.getElementById('greet-output');
 
-  function filterCards() {
-    var query = search.value.trim().toLowerCase();
-    var visible = 0;
+const greetings = [
+  "Hey there! Thanks for visiting my page.",
+  "Hello! Great to see you here.",
+  "Welcome! Hope you're having a good day."
+];
 
-    cards.forEach(function (card) {
-      var haystack = (card.getAttribute("data-search") || "").toLowerCase();
-      var match = !query || haystack.indexOf(query) !== -1;
-      card.hidden = !match;
-      if (match) {
-        visible += 1;
-      }
-    });
-
-    if (empty) {
-      empty.classList.toggle("show", visible === 0);
-    }
-  }
-
-  search.addEventListener("input", filterCards);
-})();
+greetBtn.addEventListener('click', () => {
+  const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+  greetOutput.textContent = randomGreeting;
+});
