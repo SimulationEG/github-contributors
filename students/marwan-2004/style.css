@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.track {
+    color: #555;
+    font-weight: bold;
+}
+.links a {
+    display: inline-block;
+    margin: 10px 5px 0;
+    color: #0066cc;
+    text-decoration: none;
+}
