@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    min-height: 100vh;
+}
+
+.about-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 700px;
+
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.profile-header {
+    text-align: center;
+
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #222;
+    color: white;
+
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.username {
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.track {
+    display: inline-block;
+
+    padding: 8px 16px;
+
+    border-radius: 20px;
+
+    background: #eee;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.about-section,
+.links-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.links a {
+    text-decoration: none;
+
+    padding: 11px 18px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    color: #222;
+
+    transition: 0.2s;
+}
+
+.links a:hover {
+    background: #222;
+    color: white;
+}
+
+.back-link {
+    display: block;
+
+    margin-top: 35px;
+
+    text-align: center;
+
+    color: #555;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    .profile-card {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    .links a {
+        text-align: center;
+    }
+}
