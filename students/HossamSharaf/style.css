@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* تصميم كارت البروفايل */
+.profile-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+}
+
+h3 {
+    margin: 0 0 20px 0;
+    color: #7f8c8d;
+    font-weight: normal;
+}
+
+/* تنسيق المسار التعليمي */
+.track {
+    display: inline-block;
+    background: #3498db;
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* قسم النبذة الشخصية والمهارات */
+.about {
+    text-align: left;
+    margin-bottom: 25px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.skill-tag {
+    background: #ecf0f1;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.85em;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* تنسيق الأزرار (الروابط) */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #ffffff;
+    background: #2c3e50;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #1a252f;
+}
