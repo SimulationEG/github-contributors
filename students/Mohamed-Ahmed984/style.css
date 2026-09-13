@@ -251,6 +251,8 @@ h2 {
 .contact .eyebrow { color: #fff; opacity: 0.75; }
 .contact h2 { margin-bottom: 18px; }
 .contact p:not(.eyebrow) { max-width: 600px; margin: 0 auto 30px; }
+.contact .hero-actions { justify-content: center; margin: 0; }
+.contact .button.secondary { border-color: rgba(255, 255, 255, 0.6); background: transparent; color: #fff; }
 .footer {
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
