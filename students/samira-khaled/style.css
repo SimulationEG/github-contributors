@@ -1,0 +1,78 @@
+:root {
+  --bg: #0a101c;
+  --card: #132033;
+  --border: #2c4266;
+  --text: #eef3ff;
+  --muted: #97a8c6;
+  --accent: #86efac;
+  --font: "Segoe UI", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.back {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back:hover,
+.back:focus {
+  text-decoration: underline;
+}
+
+.hero {
+  margin: 1.5rem 0 2rem;
+  padding: 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+h1 {
+  margin: 0 0 0.35rem;
+}
+
+.meta {
+  color: var(--muted);
+  margin: 0;
+}
+
+.track {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(134, 239, 172, 0.12);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 650;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+}
+
+.links {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.links a {
+  color: var(--accent);
+}
