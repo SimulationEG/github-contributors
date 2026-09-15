@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Zayed — Senior Backend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root {
+  --bg: #10171F;
+  --panel: #161F29;
+  --border: #263241;
+  --text: #E7EDF2;
+  --text-muted: #8CA0AE;
+  --accent: #E8A33D;
+  --accent-dim: #8A6A34;
+  --mono: 'IBM Plex Mono', monospace;
+  --sans: 'Inter', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 72px 24px 48px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+a:hover, a:focus-visible {
+  border-bottom-color: var(--accent);
+}
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* HERO */
+.hero {
+  margin-bottom: 64px;
+}
+
+.prompt-line {
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  min-height: 20px;
+}
+.prompt { color: var(--accent); margin-right: 8px; }
+
+.typed {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--accent);
+  width: 0;
+  vertical-align: bottom;
+  animation:
+    typing 0.7s steps(6, end) forwards,
+    caret 0.8s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 6ch; }
+}
+@keyframes caret {
+  50% { border-color: transparent; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .typed {
+    width: 6ch;
+    animation: none;
+    border-right-color: transparent;
+  }
+}
+
+.hero h1 {
+  font-family: var(--mono);
+  font-size: clamp(32px, 6vw, 44px);
+  font-weight: 600;
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
+}
+
+.role {
+  font-size: 18px;
+  color: var(--accent);
+  margin: 0 0 18px;
+  font-weight: 500;
+}
+
+.tagline {
+  color: var(--text-muted);
+  max-width: 60ch;
+  margin: 0 0 28px;
+  font-size: 15.5px;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 13.5px;
+}
+.hero-links a { color: var(--text); border-bottom: 1px solid var(--border); }
+.hero-links a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.loc { color: var(--text-muted); }
+
+/* META BLOCK */
+.meta-block {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px 24px;
+  margin-bottom: 56px;
+}
+
+.meta-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 12px;
+  padding: 6px 0;
+  font-size: 14.5px;
+}
+.meta-key {
+  font-family: var(--mono);
+  color: var(--text-muted);
+}
+.meta-val { color: var(--text); }
+
+/* SECTIONS */
+.section {
+  margin-bottom: 56px;
+}
+
+.section h2 {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent-dim);
+  margin: 0 0 24px;
+  letter-spacing: 0.02em;
+}
+.section h2::before {
+  content: '// ';
+  color: var(--border);
+}
+
+/* EXPERIENCE */
+.timeline {
+  border-left: 1px solid var(--border);
+  padding-left: 24px;
+}
+.job {
+  margin-bottom: 32px;
+  position: relative;
+}
+.job::before {
+  content: '';
+  position: absolute;
+  left: -29px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.job:last-child { margin-bottom: 0; }
+
+.job-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+}
+.job-head h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+.job-time {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.job-company {
+  color: var(--accent);
+  font-size: 14px;
+  margin: 2px 0 10px;
+}
+.job ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-muted);
+  font-size: 14.5px;
+}
+.job li { margin-bottom: 5px; }
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 28px;
+}
+.skill-group p {
+  margin: 4px 0 0;
+  font-size: 14.5px;
+  color: var(--text);
+}
+.skill-key {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.project {
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+.project h3 {
+  margin: 0 0 2px;
+  font-size: 16.5px;
+  font-weight: 600;
+}
+.project-sub {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--accent-dim);
+  margin: 0 0 8px;
+}
+.project p:last-child {
+  color: var(--text-muted);
+  font-size: 14.5px;
+  margin: 0;
+}
+
+/* FOOTER */
+.footer {
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+  margin-top: 64px;
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+.footer-links {
+  display: flex;
+  gap: 18px;
+  margin-top: 12px;
+  font-family: var(--mono);
+  font-size: 13px;
+}
+
+/* MOBILE */
+@media (max-width: 560px) {
+  .wrap { padding: 48px 18px 40px; }
+  .meta-row { grid-template-columns: 1fr; gap: 2px; }
+  .skills-grid { grid-template-columns: 1fr; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="prompt-line">
+      <span class="prompt">$</span>
+      <span class="typed">whoami</span>
+    </div>
+    <h1>Muhammad Zayed</h1>
+    <p class="role">Senior Backend Developer</p>
+    <p class="tagline">4+ years building scalable systems in PHP/Laravel and Python/Django —
+      REST APIs, real-time features, and cloud deployment.</p>
+
+    <div class="hero-links">
+      <a href="https://github.com/your-github-username" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:muhammadzayed810@gmail.com">Email</a>
+      <span class="loc">Mansoura, Egypt</span>
+    </div>
+  </header>
+
+  <!-- ABOUT / META -->
+  <section class="meta-block">
+    <div class="meta-row">
+      <span class="meta-key">track</span>
+      <span class="meta-val">Backend .NET — Simulation Academy, Cycle 1</span>
+    </div>
+    <div class="meta-row">
+      <span class="meta-key">calculator_repo</span>
+      <span class="meta-val"><a href="https://github.com/your-github-username/calculator" target="_blank" rel="noopener">github.com/your-github-username/calculator</a></span>
+    </div>
+    <div class="meta-row">
+      <span class="meta-key">focus</span>
+      <span class="meta-val">API design · database architecture · third-party integrations · CI/CD</span>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section">
+    <h2>experience</h2>
+    <div class="timeline">
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Senior Backend Developer</h3>
+          <span class="job-time">May 2025 — Present</span>
+        </div>
+        <p class="job-company">Moltaqa · Mansoura, Egypt</p>
+        <ul>
+          <li>Develop and maintain enterprise backend systems and new software products</li>
+          <li>Refactor and optimize legacy applications for scalability and maintainability</li>
+          <li>Redesign core system architecture to improve performance</li>
+          <li>Mentor junior developers and lead code reviews</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Mid-Level Backend Developer</h3>
+          <span class="job-time">Jun 2024 — Jul 2025</span>
+        </div>
+        <p class="job-company">HiNetSoft · Mansoura, Egypt</p>
+        <ul>
+          <li>Built a tourism and travel platform from scratch using Python and Django</li>
+          <li>Integrated Amadeus GDS APIs for travel booking services</li>
+          <li>Managed deployment and supported CI/CD processes</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Laravel Backend Developer</h3>
+          <span class="job-time">Dec 2021 — May 2024</span>
+        </div>
+        <p class="job-company">Kian Alraqmiah · Mansoura, Egypt</p>
+        <ul>
+          <li>Developed 10+ web applications and REST APIs using Laravel</li>
+          <li>Integrated multiple third-party APIs and refactored legacy codebases</li>
+          <li>Worked across the full software development lifecycle</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section">
+    <h2>stack</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <span class="skill-key">languages</span>
+        <p>PHP · Python · JavaScript · HTML5 · CSS3</p>
+      </div>
+      <div class="skill-group">
+        <span class="skill-key">frameworks</span>
+        <p>Laravel · Django · Bootstrap · Tailwind CSS · jQuery</p>
+      </div>
+      <div class="skill-group">
+        <span class="skill-key">databases</span>
+        <p>MySQL · MongoDB · Redis · Firebase</p>
+      </div>
+      <div class="skill-group">
+        <span class="skill-key">cloud &amp; devops</span>
+        <p>Docker · AWS · CI/CD · Linux Deployment</p>
+      </div>
+      <div class="skill-group">
+        <span class="skill-key">engineering</span>
+        <p>OOP · SOLID · Design Patterns · Data Structures &amp; Algorithms · Unit Testing · Git</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section">
+    <h2>projects</h2>
+    <div class="projects">
+
+      <div class="project">
+        <h3>The Right Meal</h3>
+        <p class="project-sub">Healthy meal subscriptions, POS &amp; marketplace</p>
+        <p>Sole backend developer for a platform spanning 4 dedicated apps — customer, nutritionist,
+          store manager, quality control — each with its own permissions. Connected Paymob for
+          payments, Dreams SMS for notifications, and a delivery API end-to-end.</p>
+      </div>
+
+      <div class="project">
+        <h3>Modo</h3>
+        <p class="project-sub">Food delivery platform</p>
+        <p>Built the backend from scratch for a 3-app platform — customer, delivery, store. Used
+          geohashing to estimate delivery cost along the real route, cutting reliance on paid Google
+          Distance Matrix calls. Added real-time tracking with transaction-level locks to prevent
+          race conditions between couriers.</p>
+      </div>
+
+      <div class="project">
+        <h3>SAS Horse</h3>
+        <p class="project-sub">Horse care, trading &amp; services marketplace</p>
+        <p>Built the backend for a 4-role marketplace — vendors, stables, owners, buyers. Unified 3
+          vendor types under one service-booking model alongside horse buy/sell listings, plus a
+          product marketplace module.</p>
+      </div>
+
+      <div class="project">
+        <h3>Vorma</h3>
+        <p class="project-sub">Community sports &amp; social platform</p>
+        <p>Built the backend for a user app and admin dashboard covering public sports places, group
+          activities, and challenges. Used Pusher webhooks for live step tracking and leaderboards,
+          plus a full social layer with chats, stories, reactions, and replies.</p>
+      </div>
+
+      <div class="project">
+        <h3>Hi Trip</h3>
+        <p class="project-sub">Tourism &amp; travel booking platform</p>
+        <p>Designed the backend architecture and MySQL schema from scratch. Integrated Amadeus GDS
+          APIs with caching for flight data, applying DTO and Strategy patterns for scalable,
+          plug-in-style vendor integrations.</p>
+      </div>
+
+      <div class="project">
+        <h3>Teksa</h3>
+        <p class="project-sub">On-demand marketplace &amp; e-commerce platform</p>
+        <p>Built REST APIs powering the mobile app, plus real-time chat via Socket.IO and live map
+          tracking. Integrated HyperPay payments and real-time notifications.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section">
+    <h2>education</h2>
+    <div class="meta-row">
+      <span class="meta-key">degree</span>
+      <span class="meta-val">B.Sc. Statistics &amp; Computer Science — Faculty of Science, Mansoura University</span>
+    </div>
+    <div class="meta-row">
+      <span class="meta-key">years</span>
+      <span class="meta-val">Jul 2017 — Jun 2021</span>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Built for the Simulation Academy .NET Diploma — GitHub Presence &amp; First Contribution assignment.</p>
+    <div class="footer-links">
+      <a href="https://github.com/your-github-username/calculator" target="_blank" rel="noopener">Calculator repo</a>
+      <a href="https://github.com/your-github-username" target="_blank" rel="noopener">GitHub profile</a>
+      <a href="https://linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
