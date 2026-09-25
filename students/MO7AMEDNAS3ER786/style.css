@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #f1f5f9;
+}
+
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 2.5rem;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  margin: 0.25rem 0;
+  font-size: 1.5rem;
+}
+
+.track {
+  color: #38bdf8;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.links li {
+  margin: 0.5rem 0;
+}
+
+.links a {
+  color: #f1f5f9;
+  text-decoration: none;
+  background: #334155;
+  display: block;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+}
+
+button {
+  background: #38bdf8;
+  border: none;
+  color: #0f172a;
+  font-weight: bold;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+#greetMsg {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #a5f3fc;
+  min-height: 1.2rem;
+}
