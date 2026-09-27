@@ -1,66 +1,48 @@
-# SimulationEG Contributors
+# SimulationEG Contributors Gallery - Assignment 2
 
-Public gallery of student contribution websites for **SimulationEG**.
+**Student**: Mohamed Osama  
+**GitHub Username**: [@MohamedOsama122](https://github.com/MohamedOsama122)  
+**Track**: Backend .NET  
+**Assignment Repository**: `MohamedOsama122-Assignment2` (Fork of `SimulationEG/github-contributors`)  
 
-Each student forks this repository, adds a personal page under `students/{github-username}/`, adds one card on the home page, and opens a Pull Request.
+---
 
-**Live site (after GitHub Pages or local preview):** open `index.html` in a browser.
+## 📌 Assignment 2 Components Overview
 
-## Purpose
+### 01. Calculator Project (Completed Externally)
+- **External Repository**: [`https://github.com/MohamedOsama122/calculator`](https://github.com/MohamedOsama122/calculator)
+- **Features**: Takes two numbers, supports addition/subtraction/multiplication/division, displays formatted results, handles division by zero and invalid input, and runs continuously until exited.
 
-- Practice **fork → SSH clone → feature branch → Pull Request**.
-- Keep one official repo (`SimulationEG/github-contributors`) as the source of truth.
-- Show every accepted contributor on a simple static website.
+### 02. Website Contribution (`/students/MohamedOsama122/`)
+- **Student Directory**: [`students/MohamedOsama122/`](./students/MohamedOsama122)
+- **Files**:
+  - `index.html` — HTML5 semantic layout featuring personal info, track, links, and LeetCode explanation.
+  - `style.css` — Responsive dark mode design with glassmorphism and micro-animations.
+  - `script.js` — Interactive scripts and visual components.
+- **Personal Information & Required Links**:
+  - **Full Name**: Mohamed Osama
+  - **GitHub Username**: `@MohamedOsama122`
+  - **Learning Track**: Backend .NET
+  - **Calculator Repository**: [`https://github.com/MohamedOsama122/calculator`](https://github.com/MohamedOsama122/calculator)
+  - **GitHub Profile**: [`https://github.com/MohamedOsama122`](https://github.com/MohamedOsama122)
+  - **LinkedIn Profile**: [`https://www.linkedin.com/in/mohamed-osama-a0273042a/`](https://www.linkedin.com/in/mohamed-osama-a0273042a/)
+  - **LeetCode Profile**: [`https://leetcode.com/u/Mohamed_222/`](https://leetcode.com/u/Mohamed_222/)
+  - **LeetCode Submission**: [Submission #2140224892](https://leetcode.com/problems/reverse-string/submissions/2140224892/)
+- **Gallery Integration**: Contributor card added under `<section class="grid">` in root `index.html`.
 
-## Preview locally
+### 03. LeetCode Problem Solving (Reverse String)
+- **Problem**: [LeetCode #344 - Reverse String](https://leetcode.com/problems/reverse-string/)
+- **Profile**: [`https://leetcode.com/u/Mohamed_222/`](https://leetcode.com/u/Mohamed_222/)
+- **Submission**: [Submission #2140224892](https://leetcode.com/problems/reverse-string/submissions/2140224892/)
+- **Algorithm**: Two Pointers approach (`left = 0`, `right = s.Length - 1`) swapping characters in-place without using built-in array reversal functions (`Array.Reverse`).
+- **Complexity**:
+  - **Time Complexity**: $\mathcal{O}(n)$
+  - **Space Complexity**: $\mathcal{O}(1)$ auxiliary space.
 
-No build step. From the project root:
+---
 
-```bash
-# Option A — just open the file
-start index.html
-```
+## 🌿 Git & Branch Information
 
-Or serve the folder (optional):
-
-```bash
-npx --yes serve .
-```
-
-Then open the URL printed in the terminal (usually `http://localhost:3000`).
-
-## Folder structure
-
-```text
-.github/pull_request_template.md
-students/
-  sample-student/
-  john-doe/
-  {your-github-username}/   ← you add this
-index.html
-style.css
-script.js
-README.md
-CONTRIBUTING.md
-.gitignore
-```
-
-## How students contribute
-
-1. Fork `SimulationEG/github-contributors`.
-2. Clone your fork with **SSH**.
-3. Branch: `feature/add-{github-username}`.
-4. Add `students/{github-username}/` with your site.
-5. Add one card to `index.html`.
-6. Commit with a conventional message and open a PR to `main`.
-
-Full rules: **[CONTRIBUTING.md](CONTRIBUTING.md)**.
-
-## Sample contributors
-
-| Folder | Role |
-|--------|------|
-| `students/sample-student/` | First sample card |
-| `students/john-doe/` | Second sample card |
-
-Replace the Calculator URLs in samples with real assignment repos when you add your own card.
+- **Working Branch**: `feature/add-MohamedOsama122`
+- **Target Remote Branch**: `SimulationEG:main`
+- **PR Title**: `feat: add Mohamed Osama contributor website`
