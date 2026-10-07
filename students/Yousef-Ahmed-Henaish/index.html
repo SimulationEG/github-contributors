@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yousef Henaish's portfolio, projects, skills, and contact links.">
+    <title>Yousef Henaish | Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./action.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="topbar">
+            <a class="brand" href="#about">Yousef Henaish</a>
+            <nav class="nav" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" id="about" aria-labelledby="intro-title">
+                <div>
+                    <p class="eyebrow">Portfolio</p>
+                    <h1 id="intro-title">Building clean digital experiences.</h1>
+                    <p class="subtitle">
+                        I am learning backend development and Agentic AI, and I enjoy creating practical,
+                        user-focused solutions with simple and effective design.
+                    </p>
+                    <div class="cta-row">
+                        <a class="button button-primary" href="https://github.com/Yousef-Ahmed-Henaish" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="button button-secondary" href="https://www.linkedin.com/in/yousef-ahmed-504039327/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+
+                <aside class="profile-card" aria-label="Profile">
+                    <span class="tag">Open to learning</span>
+                    <div>
+                        <h2>Yousef</h2>
+                        <p>Backend Development &amp; Agentic AI</p>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="section" id="projects" aria-labelledby="projects-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Selected work</p>
+                        <h2 class="section-title" id="projects-title">Projects</h2>
+                    </div>
+                    <p class="section-description">A growing collection of things I have built and explored.</p>
+                </div>
+
+                <div class="project-grid" id="project-list">
+                    <article class="project-card">
+                        <p class="project-category">Practice project</p>
+                        <h3>Basic Calculator</h3>
+                        <p>A simple calculator project built to practice core logic and user interaction.</p>
+                        <a class="project-link" href="https://github.com/Yousef-Ahmed-Henaish/7neish-Assignment2" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="project-card">
+                        <p class="project-category">Personal project</p>
+                        <h3>Portfolio Website</h3>
+                        <p>A personal website for sharing projects, skills, and ways to get in touch.</p>
+                    </article>
+                </div>
+
+                <details class="add-project">
+                    <summary class="button button-secondary">Add a project</summary>
+                    <form id="project-form">
+                        <div class="form-grid">
+                            <label>
+                                Project name
+                                <input name="title" type="text" maxlength="80" required>
+                            </label>
+                            <label>
+                                Project link <span class="optional">(optional)</span>
+                                <input name="url" type="url" placeholder="https://example.com">
+                            </label>
+                            <label class="form-description">
+                                Short description
+                                <textarea name="description" rows="3" maxlength="240" required></textarea>
+                            </label>
+                        </div>
+                        <button class="button button-primary" type="submit">Save project</button>
+                        <p class="form-note">Projects you add are saved in this browser.</p>
+                    </form>
+                </details>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </section>
+
+            <section class="section" id="skills" aria-labelledby="skills-title">
+                <p class="eyebrow">What I work with</p>
+                <h2 class="section-title" id="skills-title">Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Backend development</li>
+                    <li>Agentic AI</li>
+                    <li>Problem solving</li>
+                </ul>
+            </section>
+
+            <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+                <div>
+                    <p class="eyebrow">Get in touch</p>
+                    <h2 class="section-title" id="contact-title">Let’s connect.</h2>
+                    <p class="section-description">Find me online and follow what I am working on.</p>
+                </div>
+                <ul class="contact-list">
+                    <li><a href="https://github.com/Yousef-Ahmed-Henaish" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/yousef-ahmed-504039327/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; <span id="current-year">2026</span> Yousef Henaish</p>
+        </footer>
+    </div>
+</body>
+</html>
